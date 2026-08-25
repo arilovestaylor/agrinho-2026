@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSustentável - O Futuro do Campo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho / Navegação -->
+    <header class="header">
+        <div class="logo">
+            🌱 <span>AgroSustentável</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#fontes">Fontes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero / Capa com Imagem da pasta assets -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay">
+            <h1>Cultivando o Presente, Preservando o Futuro</h1>
+            <p>O agronegócio sustentável alia produtividade, tecnologia e preservação dos recursos naturais.</p>
+            <a href="#calculadora" class="btn">Calcular Impacto da Sua Lavoura</a>
+        </div>
+    </section>
+
+    <!-- Conteúdo Informativo -->
+    <main class="container">
+        
+        <section id="pilares" class="info-section">
+            <h2>Pilares do Agronegócio Sustentável</h2>
+            <p class="subtitle">Como a ciência e o campo trabalham juntos para regenerar o solo e otimizar recursos.</p>
+
+            <div class="cards-grid">
+                <!-- Card 1: Solo e Manejo -->
+                <article class="card">
+                    <div class="card-img-container">
+                        <img src="assets/solo e manejo.jpeg" alt="Solo e Manejo Sustentável">
+                    </div>
+                    <div class="card-content">
+                        <h3>Solo e Manejo Sustentável</h3>
+                        <p>O não-revolvimento do solo aliado à palhada reduz em até 90% a perda de terra por erosão, retém a umidade natural e eleva a matéria orgânica do solo ao longo dos anos.</p>
+                    </div>
+                </article>
+
+                <!-- Card 2: Irrigação -->
+                <article class="card">
+                    <div class="card-img-container">
+                        <img src="assets/irrigação.jpeg" alt="Manejo Eficiente de Água e Irrigação">
+                    </div>
+                    <div class="card-content">
+                        <h3>Manejo Eficiente de Água</h3>
+                        <p>A irrigação de precisão (como gotejamento) aliada ao monitoramento via sensores de umidade evita o desperdício de recursos hídricos e reduz os custos com energia elétrica.</p>
+                    </div>
+                </article>
+
+                <!-- Card 3: Lavouras -->
+                <article class="card">
+                    <div class="card-img-container">
+                        <img src="assets/lavoura.jpeg" alt="Lavouras e Cobertura Vegetal">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lavouras e Cobertura Vegetal</h3>
+                        <p>A rotação de culturas e a cobertura vegetal contínua protegem a estrutura do solo contra intempéries, melhoram a bioatividade e promovem a sustentabilidade no campo.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Interativa: Calculadora -->
+        <section id="calculadora" class="calc-section">
+            <h2>Calculadora de Manejo Sustentável do Solo</h2>
+            <p>Estime os ganhos de retenção de água e economia de fertilizantes ao adotar plantas de cobertura e cobertura morta na sua área.</p>
+
+            <div class="calc-box">
+                <form id="agroCalc">
+                    <div class="input-group">
+                        <label for="area">Área Cultivada (Hectares - ha):</label>
+                        <input type="number" id="area" placeholder="Ex: 50" min="1" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pratica">Prática Sustentável Adotada:</label>
+                        <select id="pratica">
+                            <option value="cobertura_simples">Cobertura Vegetal Simples</option>
+                            <option value="plantio_direto">Plantio Direto Consorciado (Leguminosas + Gramíneas)</option>
+                            <option value="ILPF">Integração Lavoura-Pecuária-Floresta (ILPF)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-calc">Calcular Benefícios</button>
+                </form>
+
+                <div id="resultado" class="resultado hidden">
+                    <h3>Resultados Estimados (Ano):</h3>
+                    <ul>
+                        <li><strong>Água adicional retida no solo:</strong> <span id="aguaRetida">0</span> Litros</li>
+                        <li><strong>Economia estimada em adubação:</strong> R$ <span id="economiaFertilizante">0</span></li>
+                        <li><strong>Redução de perdas de solo por erosão:</strong> ~<span id="erosaoEvitada">0</span> Toneladas/ano</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fontes Bibliográficas -->
+        <section id="fontes" class="fontes-section">
+            <h2>Fontes Bibliográficas e Referências</h2>
+            <ul class="fontes-list">
+                <li>
+                    <strong>EMBRAPA (Empresa Brasileira de Pesquisa Agropecuária).</strong> <i>Sistema de Plantio Direto: Conservação do Solo e da Água.</i> Brasília, DF, 2021. Disponível em: <a href="https://www.embrapa.br" target="_blank">embrapa.br</a>
+                </li>
+                <li>
+                    <strong>FAO (Food and Agriculture Organization of the United Nations).</strong> <i>The State of the World's Land and Water Resources for Food and Agriculture (SOLAW).</i> Roma, 2021.
+                </li>
+                <li>
+                    <strong>IPCC (Intergovernmental Panel on Climate Change).</strong> <i>Special Report on Climate Change and Land.</i> Capítulo 5: Food Security, 2020.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2026 AgroSustentável - Tecnologia e Preservação no Campo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
