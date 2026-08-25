@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const content = btn.nextElementSibling;
             const span = btn.querySelector('span');
 
-            // Alternar estado ativo
             btn.classList.toggle('active');
 
             if (content.style.maxHeight) {
